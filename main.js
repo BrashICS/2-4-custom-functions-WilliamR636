@@ -55,7 +55,73 @@ function roll_d6() {
 
 }
 
-// Part 5
+// Part 6
+
+function top_value() {
+
+    let maximum_value = Number(prompt("Maximum Value?"));
+
+    console.log(Math.floor(Math.random() * maximum_value + 1));
+
+}
+
+// Part 7
+
+let volume = 5
+
+function show_volume() {
+
+    console.log(volume);
+
+}
+
+function volume_up() {
+
+    volume ++;
+
+    show_volume();
+
+}
+
+function volume_down() {
+
+    volume --;
+
+    show_volume();
+
+}
+
+function random_volume() {
+
+    let maximum_volume = Number(prompt("Maximum Volume?"));
+
+    volume = Math.floor(Math.random() * maximum_volume + 1);
+
+    show_volume();
+
+}
+
+// Part 8
+
+function born_in() {
+
+    let age = Number(prompt("Age?"));
+
+    console.log(`${2024 - age}`);
+
+}
+
+// Part 9
+
+function roll_dice() {
+
+    let sides = Number(prompt("How many sides?"));
+
+    console.log(`You rolled ${Math.floor(Math.random() * sides + 1)} on your ${sides} sided dice`);
+
+}
+
+// Part 10
 
 function tic_tac_toe() {
 
